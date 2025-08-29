@@ -8,34 +8,37 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png">
 
-  <!-- SEO Meta -->
+  <!-- SEO -->
   <meta name="description" content="Impulsa tu negocio en Google con SEO estratégico. Paquetes claros para crecer local o nacionalmente con TRND Branding.">
   <meta property="og:title" content="TRND Branding — SEO Estratégico" />
   <meta property="og:description" content="Impulsa tu negocio en Google con SEO estratégico. Paquetes claros para crecer local o nacionalmente con TRND Branding." />
   <meta property="og:image" content="/trnd-og.png" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://trnd-landing.vercel.app/" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
     <div class="veil"></div>
-    <header>
+
+    <header class="header container">
       <div class="brand">
         <img src="/trnd-logo.png" alt="TRND Branding Logo">
       </div>
       <nav class="nav">
         <a href="#paquetes">Paquetes</a>
         <a href="#contacto">Contacto</a>
-        <a href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO" target="_blank" class="btn dark">WhatsApp</a>
+        <a class="btn dark" target="_blank"
+           href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO">WhatsApp</a>
       </nav>
     </header>
 
-    <div class="hero-inner">
+    <div class="hero-inner container">
       <h1>
-        Impulsa tu negocio en Google con 
+        Impulsa tu negocio en Google con
         <span class="grad">SEO estratégico</span>
       </h1>
       <p class="lead">
@@ -48,80 +51,86 @@
     </div>
   </section>
 
-  <!-- Paquetes -->
+  <!-- PAQUETES -->
   <section id="paquetes" class="paquetes">
-    <h2>Paquetes SEO</h2>
-    <div class="cards">
-      <article>
-        <h3>🚀 Starter</h3>
-        <p><strong>Objetivo:</strong> Aparecer en búsquedas locales y Google Maps.</p>
-        <ul>
-          <li>Optimización on-page (títulos, H1/H2, URLs)</li>
-          <li>Google Business Profile</li>
-          <li>Sitemap + robots.txt</li>
-          <li>Schema LocalBusiness</li>
-          <li>Search Console + Analytics</li>
-        </ul>
-        <p class="precio">$5,000 – $8,000 MXN (único pago)</p>
-      </article>
+    <div class="container">
+      <h2>Paquetes SEO</h2>
+      <div class="cards">
+        <article>
+          <h3>🚀 Starter</h3>
+          <p><strong>Objetivo:</strong> Aparecer en búsquedas locales y Google Maps.</p>
+          <ul>
+            <li>Optimización on-page (títulos, H1/H2, URLs)</li>
+            <li>Google Business Profile</li>
+            <li>Sitemap + robots.txt</li>
+            <li>Schema LocalBusiness</li>
+            <li>Search Console + Analytics</li>
+          </ul>
+          <p class="precio">$5,000 – $8,000 MXN (único pago)</p>
+        </article>
 
-      <article>
-        <h3>📈 Growth</h3>
-        <p><strong>Objetivo:</strong> Escalar a primeras páginas con SEO local fuerte.</p>
-        <ul>
-          <li>Todo lo del Starter</li>
-          <li>3 páginas de servicio optimizadas</li>
-          <li>Estrategia de reseñas</li>
-          <li>2 artículos de blog / mes</li>
-          <li>Optimización móvil (Core Web Vitals)</li>
-          <li>Tracking de WhatsApp</li>
-        </ul>
-        <p class="precio">$8,000 – $12,000 inicial + $3,000 – $5,000 MXN mensuales</p>
-      </article>
+        <article>
+          <h3>📈 Growth</h3>
+          <p><strong>Objetivo:</strong> Escalar a primeras páginas con SEO local fuerte.</p>
+          <ul>
+            <li>Todo lo del Starter</li>
+            <li>3 páginas de servicio optimizadas</li>
+            <li>Estrategia de reseñas</li>
+            <li>2 artículos de blog / mes</li>
+            <li>Optimización móvil (Core Web Vitals)</li>
+            <li>Tracking de WhatsApp</li>
+          </ul>
+          <p class="precio">$8,000 – $12,000 inicial + $3,000 – $5,000 MXN mensuales</p>
+        </article>
 
-      <article>
-        <h3>👑 Pro</h3>
-        <p><strong>Objetivo:</strong> Posicionamiento competitivo a nivel nacional.</p>
-        <ul>
-          <li>Todo lo del Growth</li>
-          <li>Link building (medios y blogs)</li>
-          <li>Landing pages de campaña</li>
-          <li>Reportes mensuales</li>
-          <li>Optimización long-tail keywords</li>
-          <li>Consultoría SEM opcional</li>
-        </ul>
-        <p class="precio">$15,000 – $20,000 inicial + $5,000 – $10,000 MXN mensuales</p>
-      </article>
+        <article>
+          <h3>👑 Pro</h3>
+          <p><strong>Objetivo:</strong> Posicionamiento competitivo a nivel nacional.</p>
+          <ul>
+            <li>Todo lo del Growth</li>
+            <li>Link building (medios y blogs)</li>
+            <li>Landing pages de campaña</li>
+            <li>Reportes mensuales</li>
+            <li>Optimización long-tail keywords</li>
+            <li>Consultoría SEM opcional</li>
+          </ul>
+          <p class="precio">$15,000 – $20,000 inicial + $5,000 – $10,000 MXN mensuales</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Contacto -->
+  <!-- CONTACTO -->
   <section id="contacto" class="contacto">
-    <h2>Hablemos de tu posicionamiento</h2>
-    <p>Cuéntanos qué buscas y te enviamos una propuesta clara. 🚀  
-       <strong>¡Da el primer paso hoy mismo y conquista Google!</strong></p>
+    <div class="container">
+      <h2>Hablemos de tu posicionamiento</h2>
+      <p>Cuéntanos qué buscas y te enviamos una propuesta clara. 🚀
+         <strong>¡Da el primer paso hoy mismo y conquista Google!</strong></p>
 
-    <form action="https://formspree.io/f/xqadeerr" method="POST" class="formulario">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="message" rows="4" placeholder="Cuéntanos qué necesitas..."></textarea>
-      <button type="submit" class="btn dark">Enviar</button>
-    </form>
+      <form action="https://formspree.io/f/xqadeerr" method="POST" class="formulario">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="message" rows="4" placeholder="Cuéntanos qué necesitas..."></textarea>
+        <button type="submit" class="btn dark">Enviar</button>
+      </form>
 
-    <p class="alt-contacto">
-      También puedes escribirnos a 
-      <a href="mailto:cinetrica@hotmail.com">cinetrica@hotmail.com</a> o directo en  
-      <a href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO">WhatsApp</a>.
-    </p>
+      <p class="alt-contacto">
+        También puedes escribirnos a
+        <a href="mailto:cinetrica@hotmail.com">cinetrica@hotmail.com</a> o directo en
+        <a target="_blank" href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO">WhatsApp</a>.
+      </p>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 TRND Branding. Todos los derechos reservados.</p>
-    <div class="social">
-      <a href="https://www.instagram.com/hans.editorial/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=100091451553424" target="_blank">Facebook</a>
-      <a href="https://wa.me/527791156633?text=Hola%20TRND%20Branding" target="_blank">WhatsApp</a>
+    <div class="container footer-inner">
+      <p>© <script>document.write(new Date().getFullYear())</script> TRND Branding. Todos los derechos reservados.</p>
+      <div class="social">
+        <a target="_blank" href="https://www.instagram.com/hans.editorial/">Instagram</a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100091451553424">Facebook</a>
+        <a target="_blank" href="https://wa.me/527791156633?text=Hola%20TRND%20Branding">WhatsApp</a>
+      </div>
     </div>
   </footer>
 </body>
