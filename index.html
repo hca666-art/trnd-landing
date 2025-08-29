@@ -4,7 +4,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TRND Branding — SEO Estratégico</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Impulsa tu negocio en Google con SEO estratégico. Paquetes Starter, Growth y Pro. Contacto por WhatsApp y formulario.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
+      background: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: url("bg-trnd.jpg") center/cover no-repeat;
+    }
+    .veil {
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.7);
+    }
+    .hero-inner {
+      position: relative;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Header con logo centrado */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .brand img {
+      height: 180px; /* grande en desktop */
+      width: auto;
+    }
+    @media (max-width: 600px) {
+      .brand img {
+        height: 120px; /* más compacto en móvil */
+      }
+    }
+    .nav {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    /* Botones */
+    .btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .btn.dark {
+      background: #111;
+      color: #fff;
+    }
+    .btn.light {
+      border: 1px solid #111;
+      background: #fff;
+      color: #111;
+    }
+
+    /* Títulos */
+    h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      line-height: 1.2;
+      margin: 20px 0 10px;
+    }
+    .grad {
+      background: linear-gradient(135deg, #bfa14a, #d2bc72, #9c7f2a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      margin-top: 40px;
+      font-size: 28px;
+      text-align: center;
+    }
+    .lead {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #444;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Paquetes */
+    #paquetes {
+      padding: 60px 20px;
+    }
+    .paquetes-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 20px;
+    }
+    .paquetes-grid article {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: left;
+    }
+    .price {
+      font-weight: bold;
+      margin-top: 12px;
+      color: #bfa14a;
+    }
+
+    /* Contacto */
+    #contacto {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact-form {
+      display: grid;
+      gap: 12px;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .extra-contact {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #111;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <!-- Hero principal -->
