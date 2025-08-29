@@ -13,21 +13,38 @@
     .container{max-width:1120px;margin:0 auto;padding:0 16px}
     .hero{position:relative;overflow:hidden;background:url('bg-trnd.jpg') center/cover no-repeat}
     .veil{position:absolute;inset:0;background:rgba(255,255,255,.74)}
-    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    header{
+  display:flex;
+  flex-direction:column;   /* coloca logo arriba y menú abajo */
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:24px 0;
+}
+
     .brand{display:flex;align-items:center;gap:12px}
     .brand img{
-  height:80px;
+  height:80px;   /* grande en desktop */
   width:auto;
   display:block;
 }
 
 @media(max-width:600px){
   .brand img{
-    height:100px; /* aún más grande en móvil */
+    height:50px; /* más pequeño en móvil */
   }
 }
 
-    .nav{display:none;gap:16px;align-items:center}
+
+  .nav{
+  display:flex;              /* asegura que sea un contenedor flexible */
+  gap:20px;                  /* espacio entre los links del menú */
+  align-items:center;
+  justify-content:center;    /* centra horizontalmente */
+  margin-top:24px;           /* da aire entre el logo y el menú */
+}
+
+
     @media(min-width:720px){.nav{display:flex}}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none}
     .btn.dark{background:#111;color:#fff}
