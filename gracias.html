@@ -1,109 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>¡Enviado con éxito! | TRND Branding</title>
+  <meta name="description" content="Gracias por tu mensaje. Un especialista de TRND Branding se pondrá en contacto contigo en breve.">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="¡Enviado con éxito! | TRND Branding">
-  <meta property="og:description" content="Gracias por escribirnos. En breve un especialista de TRND Branding te contactará.">
-  <meta property="og:image" content="/trnd-og.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://trnd-landing.vercel.app/gracias.html">
+  <meta property="og:title" content="¡Enviado con éxito! | TRND Branding" />
+  <meta property="og:description" content="Gracias por tu mensaje. Un especialista de TRND Branding se pondrá en contacto contigo en breve." />
+  <meta property="og:image" content="trnd-og.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://trnd-landing.vercel.app/gracias.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¡Enviado con éxito! | TRND Branding" />
+  <meta name="twitter:description" content="Gracias por tu mensaje. Un especialista de TRND Branding se pondrá en contacto contigo en breve." />
+  <meta name="twitter:image" content="trnd-og.png" />
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
       color: #111;
-      background: url('/bg-trnd.jpg') no-repeat center center/cover;
-    }
-
-    .veil {
-      position: fixed;
-      inset: 0;
-      background: rgba(255, 255, 255, 0.7);
-    }
-
-    .wrap {
-      position: relative;
-      min-height: 100vh;
+      background: url('bg-trnd.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 20px;
+      min-height: 100vh;
     }
-
+    .veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,.74);
+    }
     .card {
       position: relative;
       z-index: 1;
       background: #fff;
-      border-radius: 16px;
-      padding: 40px 20px;
-      max-width: 600px;
+      padding: 40px 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.12);
+      max-width: 520px;
       width: 100%;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
     }
-
     .brand img {
-      height: 120px;
-      margin-bottom: 20px;
+      height: 60px;
+      margin-bottom: 14px;
     }
-
     h1 {
-      font-size: clamp(28px, 5vw, 42px);
-      margin-bottom: 10px;
+      font-size: clamp(28px, 5vw, 40px);
+      margin: 0 0 12px 0;
       color: #bfa14a;
     }
-
     p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: #444;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 24px;
     }
-
-    .btn {
+    a.btn {
       display: inline-block;
       padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
+      border-radius: 12px;
+      font-weight: 700;
       text-decoration: none;
       background: #111;
       color: #fff;
     }
-
-    .btn.light {
-      background: #fff;
-      border: 1px solid #111;
-      color: #111;
-    }
-
     footer {
       margin-top: 20px;
       font-size: 13px;
-      color: #777;
+      color: #666;
+    }
+    footer a {
+      color: #bfa14a;
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <div class="veil"></div>
-  <div class="wrap">
-    <div class="card">
-      <div class="brand">
-        <img src="/trnd-logo.png" alt="TRND Branding Logo">
-      </div>
-      <h1>¡Enviado con éxito!</h1>
-      <p>Gracias por tu mensaje 🙌. Muy pronto un especialista de <strong>TRND Branding</strong> se pondrá en contacto contigo.</p>
-      <a href="/" class="btn">← Volver al inicio</a>
-      <footer>
-        © <script>document.write(new Date().getFullYear())</script> TRND Branding
-      </footer>
+  <div class="card">
+    <div class="brand">
+      <img src="trnd-logo.png" alt="TRND Branding Logo" onerror="this.style.display='none'">
     </div>
+    <h1>¡Enviado con éxito!</h1>
+    <p>Gracias por tu mensaje 🙌.<br>Un especialista de <strong>TRND Branding</strong> se pondrá en contacto contigo en breve.</p>
+    <a href="index.html" class="btn">← Volver al inicio</a>
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> TRND Branding · 
+      <a href="https://www.instagram.com/hans.editorial/">Instagram</a> · 
+      <a href="https://www.facebook.com/profile.php?id=100091451553424">Facebook</a>
+    </footer>
   </div>
 </body>
 </html>
