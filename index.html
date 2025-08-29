@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRND Branding — Paquetes SEO</title>
+  <meta name="description" content="Impulsa tu negocio en Google con SEO estratégico. Tres paquetes claros: Starter, Growth y Pro. Contacto por WhatsApp y formulario.">
+  <style>
+    :root { --dorado: #bfa14a; --dorado2:#d2bc72; --dorado3:#9c7f2a; --negro:#0e0e0e; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial;color:#111;background:#fff}
+    a{color:inherit}
+    .container{max-width:1120px;margin:0 auto;padding:0 16px}
+    .hero{position:relative;overflow:hidden;background-image:url('bg-trnd.png');background-size:cover;background-position:center}
+    .veil{position:absolute;inset:0;background:rgba(255,255,255,.72)}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+    header .brand{display:flex;align-items:center;gap:12px}
+    .badge{height:40px;width:40px;border-radius:14px;background:linear-gradient(135deg,var(--dorado),var(--dorado2),var(--dorado3));box-shadow:0 6px 20px rgba(0,0,0,.15)}
+    .nav{display:none;gap:16px}
+    @media(min-width:640px){.nav{display:flex}}
+    .nav a{font-size:14px;text-decoration:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none}
+    .btn.dark{background:#111;color:#fff}
+    .btn.light{border:1px solid #111;color:#111;background:#fff}
+    .hero-inner{position:relative;padding:64px 0}
+    h1{font-size:clamp(32px,5vw,56px);line-height:1.1;margin:0;font-weight:900}
+    .grad{background:linear-gradient(135deg,var(--dorado),var(--dorado2),var(--dorado3));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{margin-top:16px;font-size:18px;color:#333;max-width:720px}
+    .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    .hero-grid{display:grid;gap:28px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    .mock-card{border:1px solid #eaeaea;background:rgba(255,255,255,.75);backdrop-filter:blur(6px);border-radius:22px;padding:10px;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+    .mock-card img{width:100%;height:auto;display:block;border-radius:18px;object-fit:cover}
+    section{padding:64px 0;border-top:1px solid #efefef}
+    h2{font-size:clamp(26px,4vw,40px);margin:0 0 10px 0}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{border:1px solid #eaeaea;border-radius:20px;padding:22px;background:rgba(255,255,255,.92);box-shadow:0 8px 24px rgba(0,0,0,.05)}
+    .card h3{margin:8px 0 4px 0;color:var(--dorado)}
+    ul.clean{list-style:none;padding:0;margin:12px 0 0 0}
+    ul.clean li{display:flex;gap:8px;align-items:flex-start;margin:6px 0;color:#333}
+    .dot{height:9px;width:9px;border-radius:50%;background:var(--dorado);margin-top:6px}
+    .price{font-weight:700;margin-top:10px}
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:12px;font-size:14px}
+    label{font-size:13px;font-weight:600;margin-bottom:6px;display:block}
+    small.muted{color:#666}
+    footer{padding:36px 0;border-top:1px solid #efefef;font-size:14px;color:#666;text-align:center}
+    .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 14px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.2);font-size:14px;display:none;z-index:9999}
+    .gold{color:var(--dorado)}
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="veil"></div>
+    <div class="container hero-inner">
+      <header>
+        <div class="brand"><div class="badge"></div><strong>TRND Branding</strong></div>
+        <nav class="nav">
+          <a href="#paquetes">Paquetes</a>
+          <a href="#contacto">Contacto</a>
+          <a class="btn dark" href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO">WhatsApp</a>
+        </nav>
+      </header>
+
+      <div class="hero-grid">
+        <div>
+          <h1>Impulsa tu negocio en Google con <span class="grad">SEO estratégico</span></h1>
+          <p class="lead">Tres paquetes claros para crecer local o nacionalmente. Diseño impecable + estrategia que convierte.</p>
+          <div class="cta">
+            <a class="btn dark" href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO">Quiero cotizar por WhatsApp →</a>
+            <a class="btn light" href="#paquetes">Ver paquetes</a>
+          </div>
+        </div>
+        <div>
+          <div class="mock-card"><img src="mock-hero.png" alt="Mockup SEO estilizado"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ... resto igual que antes ... -->
+</body>
+</html>
