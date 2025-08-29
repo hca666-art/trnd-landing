@@ -4,32 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TRND Branding — Paquetes SEO</title>
-  <meta name="description" content="Impulsa tu negocio en Google con SEO estratégico. Tres paquetes claros: Starter, Growth y Pro. Contacto por WhatsApp y formulario.">
+  <meta name="description" content="Impulsa tu negocio en Google con SEO estratégico. Paquetes Starter, Growth y Pro. Contacto por WhatsApp y formulario.">
   <style>
-    :root { --dorado: #bfa14a; --dorado2:#d2bc72; --dorado3:#9c7f2a; --negro:#0e0e0e; }
+    :root{ --dorado:#bfa14a; --dorado2:#d2bc72; --dorado3:#9c7f2a; --negro:#0f0f0f; }
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial;color:#111;background:#fff}
     a{color:inherit}
     .container{max-width:1120px;margin:0 auto;padding:0 16px}
-    .hero{position:relative;overflow:hidden;background-image:url('bg-trnd.png');background-size:cover;background-position:center}
-    .veil{position:absolute;inset:0;background:rgba(255,255,255,.72)}
-    header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
-    header .brand{display:flex;align-items:center;gap:12px}
-    .badge{height:40px;width:40px;border-radius:14px;background:linear-gradient(135deg,var(--dorado),var(--dorado2),var(--dorado3));box-shadow:0 6px 20px rgba(0,0,0,.15)}
-    .nav{display:none;gap:16px}
-    @media(min-width:640px){.nav{display:flex}}
-    .nav a{font-size:14px;text-decoration:none}
+    .hero{position:relative;overflow:hidden;background:url('bg-trnd.jpg') center/cover no-repeat}
+    .veil{position:absolute;inset:0;background:rgba(255,255,255,.74)}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:44px;width:auto;display:block}
+    .nav{display:none;gap:16px;align-items:center}
+    @media(min-width:720px){.nav{display:flex}}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none}
     .btn.dark{background:#111;color:#fff}
-    .btn.light{border:1px solid #111;color:#111;background:#fff}
-    .hero-inner{position:relative;padding:64px 0}
+    .btn.light{border:1px solid #111;background:#fff;color:#111}
+    .hero-inner{position:relative;padding:56px 0}
     h1{font-size:clamp(32px,5vw,56px);line-height:1.1;margin:0;font-weight:900}
     .grad{background:linear-gradient(135deg,var(--dorado),var(--dorado2),var(--dorado3));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{margin-top:16px;font-size:18px;color:#333;max-width:720px}
+    .lead{margin-top:14px;font-size:18px;color:#333;max-width:720px}
     .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
     .hero-grid{display:grid;gap:28px;align-items:center}
     @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-    .mock-card{border:1px solid #eaeaea;background:rgba(255,255,255,.75);backdrop-filter:blur(6px);border-radius:22px;padding:10px;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+    .mock-card{border:1px solid #eaeaea;background:rgba(255,255,255,.78);backdrop-filter:blur(6px);border-radius:22px;padding:10px;box-shadow:0 12px 30px rgba(0,0,0,.08)}
     .mock-card img{width:100%;height:auto;display:block;border-radius:18px;object-fit:cover}
     section{padding:64px 0;border-top:1px solid #efefef}
     h2{font-size:clamp(26px,4vw,40px);margin:0 0 10px 0}
@@ -55,7 +54,11 @@
     <div class="veil"></div>
     <div class="container hero-inner">
       <header>
-        <div class="brand"><div class="badge"></div><strong>TRND Branding</strong></div>
+        <div class="brand">
+          <!-- Si no cargas trnd-logo.png, no pasa nada: se oculta -->
+          <img src="trnd-logo.png" alt="TRND Branding" onerror="this.style.display='none'">
+          <strong>TRND Branding</strong>
+        </div>
         <nav class="nav">
           <a href="#paquetes">Paquetes</a>
           <a href="#contacto">Contacto</a>
@@ -79,6 +82,102 @@
     </div>
   </div>
 
-  <!-- ... resto igual que antes ... -->
+  <section id="paquetes">
+    <div class="container">
+      <h2>Paquetes SEO</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>🚀 Starter</h3>
+          <p><strong>Objetivo:</strong> Aparecer en búsquedas locales y Google Maps.</p>
+          <ul class="clean">
+            <li><span class="dot"></span><span>Optimización on-page (títulos, H1/H2, URLs)</span></li>
+            <li><span class="dot"></span><span>Google Business Profile</span></li>
+            <li><span class="dot"></span><span>Sitemap + robots.txt</span></li>
+            <li><span class="dot"></span><span>Schema LocalBusiness</span></li>
+            <li><span class="dot"></span><span>Search Console + Analytics</span></li>
+          </ul>
+          <div class="price">$5,000 – $8,000 MXN (único pago)</div>
+        </div>
+
+        <div class="card">
+          <h3>📈 Growth</h3>
+          <p><strong>Objetivo:</strong> Escalar a primeras páginas con SEO local fuerte.</p>
+          <ul class="clean">
+            <li><span class="dot"></span><span>Todo lo del Starter</span></li>
+            <li><span class="dot"></span><span>3 páginas de servicio optimizadas</span></li>
+            <li><span class="dot"></span><span>Estrategia de reseñas</span></li>
+            <li><span class="dot"></span><span>2 artículos de blog / mes</span></li>
+            <li><span class="dot"></span><span>Optimización móvil (Core Web Vitals)</span></li>
+            <li><span class="dot"></span><span>Tracking de WhatsApp</span></li>
+          </ul>
+          <div class="price">$8,000 – $12,000 inicial + $3,000 – $5,000 MXN mensuales</div>
+        </div>
+
+        <div class="card">
+          <h3>👑 Pro</h3>
+          <p><strong>Objetivo:</strong> Posicionamiento competitivo a nivel nacional.</p>
+          <ul class="clean">
+            <li><span class="dot"></span><span>Todo lo del Growth</span></li>
+            <li><span class="dot"></span><span>Link building (medios y blogs)</span></li>
+            <li><span class="dot"></span><span>Landing pages de campaña</span></li>
+            <li><span class="dot"></span><span>Reportes mensuales</span></li>
+            <li><span class="dot"></span><span>Optimización long-tail keywords</span></li>
+            <li><span class="dot"></span><span>Consultoría SEM opcional</span></li>
+          </ul>
+          <div class="price">$15,000 – $20,000 inicial + $5,000 – $10,000 MXN mensuales</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Hablemos de tu posicionamiento</h2>
+      <p>Cuéntanos qué buscas y te enviamos una propuesta clara.</p>
+      <form id="leadForm" action="https://formspree.io/f/xqadeerr" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo lead — Paquetes SEO TRND" />
+        <input type="hidden" name="_replyto" value="cinetrica@hotmail.com" />
+        <input type="hidden" name="_gotcha" />
+        <input type="hidden" name="_redirect" value="gracias.html" />
+        <div style="display:grid;gap:12px;grid-template-columns:1fr">
+          <div>
+            <label>Nombre</label>
+            <input name="name" required />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div>
+            <label>Mensaje</label>
+            <textarea name="message" rows="4" placeholder="Ej. Quiero el paquete Growth para posicionar en CDMX"></textarea>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <small class="muted">Al enviar aceptas nuestra política de privacidad.</small>
+            <button class="btn" style="background:var(--dorado);color:#fff;border:none">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> TRND Branding — 
+    <a class="gold" href="https://www.instagram.com/hans.editorial/?next=%2F">Instagram</a> · 
+    <a class="gold" href="https://www.facebook.com/profile.php?id=100091451553424">Facebook</a> · 
+    <a class="gold" href="mailto:cinetrica@hotmail.com">Correo</a> · 
+    <a class="gold" href="https://wa.me/527791156633?text=Hola%20TRND%20Branding,%20quiero%20informaci%C3%B3n%20de%20sus%20paquetes%20SEO">WhatsApp</a>
+  </footer>
+
+  <div id="toast" class="toast">¡Enviado con éxito! Redirigiendo…</div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const form = document.getElementById('leadForm');
+    const toast = document.getElementById('toast');
+    form.addEventListener('submit', function() {
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 4000);
+    });
+  </script>
 </body>
 </html>
